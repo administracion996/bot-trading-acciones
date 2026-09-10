@@ -6,7 +6,7 @@ on:
     - cron: '0 14 * * 1-5'
     - cron: '30 16 * * 1-5'
     - cron: '30 19 * * 1-5'
-  workflow_dispatch: # Permite probarlo manualmente con un botón
+  workflow_dispatch:
 
 jobs:
   run-trading-bot:
@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Descargar repositorio
-      uses: uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: Configurar Python 3.10
       uses: actions/setup-python@v5
