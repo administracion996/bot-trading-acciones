@@ -2,10 +2,8 @@ name: Bot de Trading Acciones
 
 on:
   schedule:
-    # Ejecuta a las 16:00, 18:30 y 21:30 (Hora de España) de Lunes a Viernes
-    - cron: '0 14 * * 1-5'
-    - cron: '30 16 * * 1-5'
-    - cron: '30 19 * * 1-5'
+    # Ejecuta a las 15:47, 17:47, 19:47 y 21:47 (Hora de España) de Lunes a Viernes
+    - cron: '47 13,15,17,19 * * 1-5'
   workflow_dispatch:
 
 jobs:
